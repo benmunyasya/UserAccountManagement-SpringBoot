@@ -1,8 +1,11 @@
 package com.ben.useraccountmanagement.dto;
 
+import com.ben.useraccountmanagement.validation.UniqueEmail;
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+
 
 public class UserRequestDto {
 
@@ -10,9 +13,9 @@ public class UserRequestDto {
     @Size(max = 100)
     private String username;
 
-    @NotBlank
-    @Email
-    @Size(max = 150)
+    @NotBlank(message = "Email is required")
+    @Email(message = "Email must be valid")
+    @UniqueEmail
     private String email;
 
     @Size(max = 20)
