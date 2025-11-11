@@ -5,7 +5,6 @@ import com.ben.useraccountmanagement.dto.UserResponseDto;
 import com.ben.useraccountmanagement.entity.User;
 import com.ben.useraccountmanagement.mapper.UserMapper;
 import com.ben.useraccountmanagement.repository.UserRepository;
-import com.ben.useraccountmanagement.exception.EmailAlreadyExistsException;
 
 import org.springframework.stereotype.Service;
 
