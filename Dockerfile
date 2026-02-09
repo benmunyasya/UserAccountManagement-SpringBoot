@@ -1,6 +1,6 @@
 
 
-# Stage 2: Runtime image
+
 FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 COPY target/*.jar app.jar
